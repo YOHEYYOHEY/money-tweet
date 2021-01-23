@@ -1,24 +1,28 @@
-# README
+#　要件定義
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## トップページ
 
-Things you may want to cover:
+【ボタン】
+サインイン/ログインページへ遷移できるボタン
+ログイン時は、ログアウトできるボタンがある
+投稿を追加できるボタンがある
+マイページへ遷移できるボタン
 
-* Ruby version
+【表示】
+・投稿された記事を一覧で見る事ができる
 
-* System dependencies
+## ユーザページ
+【ボタン】
+・ユーザー情報を編集できるボタン
 
-* Configuration
+【表示】
+・ユーザー情報
+・使用した金額
 
-* Database creation
+## 一覧表示ページ
+【ボタン】
+・コメント
+・いいね
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+【表示】
+・投稿された記事
