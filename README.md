@@ -26,3 +26,21 @@
 
 【表示】
 ・投稿された記事
+
+# テーブル設計
+
+## users テーブル
+
+| Column   | Type   | Options     |
+| -------- | ------ | ----------- |
+| name     | string | null: false |
+| email    | string | null: false |
+| password | string | null: false |
+
+## messages テーブル
+
+| Column   | Type   | Options     |
+| -------- | ------ | ----------- |
+| money    | string | null: false |
+| email    | string | null: false |
+| password | string | null: false |
