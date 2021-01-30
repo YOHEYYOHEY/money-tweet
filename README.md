@@ -31,16 +31,26 @@
 
 ## users テーブル
 
-| Column   | Type   | Options     |
-| -------- | ------ | ----------- |
-| name     | string | null: false |
-| email    | string | null: false |
-| password | string | null: false |
+| Column   | Type   | Options                   |
+| -------- | ------ | -----------               |
+| name     | string | null: false ,unique: true |
+| email    | string | null: false ,unique: true |
+| password | string | null: false               |
 
-## messages テーブル
 
-| Column   | Type   | Options     |
-| -------- | ------ | ----------- |
-| money    | string | null: false |
-| email    | string | null: false |
-| password | string | null: false |
+### Association
+
+- has_many :tweets
+
+
+## tweets テーブル
+
+| Column   | Type    | Options     |
+| -------- | ------  | ----------- |
+| money    | integer | null: false |
+| item     | string  | null: false |
+|          |         |             |
+
+### Association
+
+- belongs_to :user
