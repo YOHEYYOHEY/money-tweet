@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 2021_01_31_072148) do
   create_table "tweets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "money"
     t.string "item"
+    t.date "day"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

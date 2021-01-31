@@ -49,7 +49,7 @@
 | -------- | ------  | ----------- |
 | money    | integer | null: false |
 | item     | string  | null: false |
-|          |         |             |
+| day      | date    | null: false |
 
 ### Association
 

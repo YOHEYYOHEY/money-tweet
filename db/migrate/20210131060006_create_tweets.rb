@@ -3,6 +3,7 @@ class CreateTweets < ActiveRecord::Migration[6.0]
     create_table :tweets do |t|
       t.integer :money
       t.string :item
+      t.date :day
       t.timestamps
     end
   end
