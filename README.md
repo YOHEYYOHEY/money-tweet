@@ -1,24 +1,56 @@
-# README
+#　要件定義
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## トップページ
 
-Things you may want to cover:
+【ボタン】
+サインイン/ログインページへ遷移できるボタン
+ログイン時は、ログアウトできるボタンがある
+投稿を追加できるボタンがある
+マイページへ遷移できるボタン
 
-* Ruby version
+【表示】
+・投稿された記事を一覧で見る事ができる
 
-* System dependencies
+## ユーザページ
+【ボタン】
+・ユーザー情報を編集できるボタン
 
-* Configuration
+【表示】
+・ユーザー情報
+・使用した金額
 
-* Database creation
+## 一覧表示ページ
+【ボタン】
+・コメント
+・いいね
 
-* Database initialization
+【表示】
+・投稿された記事
 
-* How to run the test suite
+# テーブル設計
 
-* Services (job queues, cache servers, search engines, etc.)
+## users テーブル
 
-* Deployment instructions
+| Column   | Type   | Options                   |
+| -------- | ------ | -----------               |
+| name     | string | null: false ,unique: true |
+| email    | string | null: false ,unique: true |
+| password | string | null: false               |
 
-* ...
+
+### Association
+
+- has_many :tweets
+
+
+## tweets テーブル
+
+| Column   | Type    | Options     |
+| -------- | ------  | ----------- |
+| money    | integer | null: false |
+| item     | string  | null: false |
+|          |         |             |
+
+### Association
+
+- belongs_to :user
